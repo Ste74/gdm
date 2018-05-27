@@ -1985,7 +1985,7 @@ on_user_session_started (GdmSession      *session,
         if (gdm_session_get_display_mode (session) != GDM_SESSION_DISPLAY_MODE_REUSE_VT) {
                 GdmDisplay *display = get_greeter_display_from_session (manager, session);
                 if (display)
-                        gdm_display_schedule_kill_greeter (display, 5);
+                        gdm_display_schedule_kill_greeter (display, 30);
         }
 }
 
